@@ -8,7 +8,6 @@
 body{
     background-size: 100%;
     background-image: url("../img/background-main.png");
-
 }
 
 header{
@@ -22,8 +21,6 @@ header{
 .logo{
     width: 200px;
     height: 100px;
-    background-image: url("../img/logo.png");
-    background-size: cover;
 }
 
 .nav{
@@ -33,17 +30,9 @@ header{
 
 .nav > a{
     text-decoration: none;
+    font-size: larger;
     margin: 50px;
     color: white;
-}
-
-.hero{
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    color: white;
-
 }
 
 h1{
@@ -53,12 +42,28 @@ h1{
     background-color: var(--background-color);
 }
 
+h1:hover{
+    text-decoration: underline;
+}
+
+.container{
+    columns: 2;
+    padding: 30px;
+}
+
+.text {
+    text-align: center;
+}
+
+.video{
+    text-align: right;
+}
+
 h2{
     color: #000;
     font-size: 40px;
     font-weight: bold;
     background-color: var(--background-color);
-
 }
 
 h3{
@@ -66,72 +71,82 @@ h3{
     font-size: 30px;
     font-weight: bold;
     background-color: var(--background-color);
-
-
 }
 
 p{
     color: #1F2937;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--background-color);
 }
 
 
 iframe{
-    display: flex-box;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .card-container {
     display: flex;
-    height: 450px;
+    height: 600px;
     justify-content: space-between;
     background-image: url("../img/background.png");
     background-size: 100%;
     background-position: bottom;
     align-items: center;
-
-
 }
 
 .card {
     width: 200px;
-    height: 350px;
-    margin: 10px;
+    max-height: 600px;
+    margin-top: 80px;
     border-radius: 5px;
     background-size: cover;
     background-position: center;
-    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: white;
+    color: white
+}
+
+.card > .card-content{
+    background: yellow;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
 }
 
 .card:nth-child(1) {
     background-image: url('https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png');
+    height: 500px;
 }
 
 .card:nth-child(2) {
     background-image: url('https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png');
+    height: 600px;
+    margin-top: 5px;
 }
 
 .card:nth-child(3) {
     background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/Bart_Simpson_200px.png/170px-Bart_Simpson_200px.png');
+    height: 360px;
 }
 
 .card:nth-child(4) {
     background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Lisa_Simpson.png/220px-Lisa_Simpson.png');
+    height: 330px;
 }
 
 .card:nth-child(5) {
     background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Maggie_Simpson.png/220px-Maggie_Simpson.png');
+    height: 300px;
 }
 
 .card-content {
-
     background-color: var(--background-header);
 }
 
@@ -142,7 +157,6 @@ iframe{
     gap: 20px;
     background-image: url("../img/background-seasons.png");
     background-size: 100%;
-
 }
 
 .season-item {
@@ -151,7 +165,12 @@ iframe{
     text-align: center;
     cursor: pointer;
     font-size: large;
+}
 
+.season-item:hover{
+    text-decoration: underline;
+    color: #000;
+    font-size: x-large;
 }
 
 footer{
